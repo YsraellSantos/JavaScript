@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Arvore DOM</title>
+   
+
+</head>
+<body>
+    <h1>Iniciando os estudos Dom</h1>
+    <p>Aqui vai os reultados</p>
+    <p>Aprendendo a usar o <strong>DOm</strong> em javaScript</p>
+    <div class="in">Clique em mim</div>
+  
+    <br>
+
+
+   <script>
+
+    var p1 = window.document.getElementsByTagName('p')[0]
+    window.document.write(p1.innerHTML)
+
+    var d = window.document.querySelector('div.in')
+    d.innerHTML = 'ola mundo'
+    d.style.color = 'blue'
+    
+    var b = window.document.body
+    b.style.background = 'green'
+
+    var id = window.document.getElementById('i')
+    id.style.color = "red"
+    id.innerHTML = 'Estou aguardado....'
+
+   </script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../02"
+		},
+		{
+			"path": "../../03"
+		},
+		{
+			"path": "../../04"
+		},
+		{
+			"path": "../../05"
+		},
+		{
+			"path": "../../06"
+		},
+		{
+			"path": "../../07"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "01",
+		"liveServer.settings.port": 5501
+	}
+}

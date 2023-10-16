@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sisitemas de multas</title>
+    <style>
+        div#res{
+            margin-left: 20px;
+            margin-top: 20px;
+            background-color: aqua;
+           line-height: 50px;
+           text-align: center;
+           color: black;
+           font-family: 'Courier New', Courier, monospace;
+           border-radius: 20px;
+           
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Sistemas de multas</h1>
+
+    <label> A velocidade do seu altomovel é 
+        <input type="number" id="txtn1" name="txtn1" placeholder="Digite a velocidade" required>
+    </label >km/h:
+
+        <input type="button" id="vel" name="vel" value="Verificar" onclick="calcular()" required>
+        <div id="res">Resultado</div>
+    
+        <script>
+           
+
+            function calcular(){
+
+            var cal = window.document.querySelector('input#txtn1')
+            var r = window.document.querySelector('div#res')
+            var v = Number(cal.value)
+            r.innerHTML = v
+
+            if(v >= 61 && v < 500){
+                r.innerHTML = ` A sua velocidade é de ${v}Kml/h   <strong>(Multado)</strong>, Procure o Detran: <br> `
+                r.style.background = 'red'
+                r.innerHTML += 'Dirija sem pre com o sinto de segurança!!'
+                r.style.color = 'white'
+                
+
+            
+            }
+            else if(v >= 0 && v <= 60.9){
+                r.innerHTML += ` kml/h Sua velocidade esta muito abaixo, para esta rodovia: <br>`
+                r.innerHTML += 'Dirija sem pre com o sinto de segurança!!'
+                
+            }
+            
+            else if(v == 0){
+                r.innerHTML = 'Valor inserido invaliido: <br>'
+                r.style.background = 'blue'
+                r.style.color = 'white'
+                r.innerHTML += ' Dirija sem pre com o sinto de segurança!!'
+            }
+
+        }
+        </script>
+
+
+</body>
+</html>

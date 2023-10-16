@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ação com html</title>
+
+    <style>
+        #c{
+            color: wheat;
+            background-color: rgb(0, 0, 0);
+            height: 200px;
+            width: 200px;
+            line-height: 200px;
+            text-align: center;
+            font-family: 'Rubik Pixels', cursive; 
+            font-size: 30px;
+            
+        }
+    </style>
+
+</head>
+
+    <h1>Primeira forma de fazer interação com o html</h1>
+    <div id="c" onclick="clique()" onmouseout="saio()" onmouseenter="entrou()" >
+        Interja...
+    </div>
+
+    <script>
+
+        function clique(){
+          var n = window.document.getElementById('c')
+              n.innerText = ('Clicou')
+              n.style.background = 'rgb(29, 192, 192)'
+        }
+
+        function entrou(){
+            var e = window.document.getElementById('c')
+              e.innerText = 'Entou'
+              e.style.background = 'red'
+        }
+
+        function saio(){
+            var s = window.documnt.getElementById('c')
+            s.innerText = 'Saio'
+            s.style.background = 'black'
+        }
+
+    </script>
+
+
+</body>
+</html>

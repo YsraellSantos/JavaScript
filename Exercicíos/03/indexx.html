@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1 </title>
+</head>
+
+<body>
+    <h1> Digite cinco numeros</h1>
+
+    <input id="n1" type="number">
+
+    <p></p>
+    <input id="n2" type="number">
+
+    <p></p>
+    <input id="n3" type="number">
+
+    <p></p>
+    <input id="n4" type="number">
+
+    <p></p>
+    <input id="n5" type="number">
+
+    <p></p>
+    <button onclick="calcular()">calcule</button>
+    <p></p>
+
+    <div id="res"></div>
+
+    <script>
+
+        function calcular() {
+            var n1 = Number.getElementById("n1")
+            var n2 = Number.getElementById("n2")
+            var n3 = Number.getElementById("n3")
+            var n4 = Number.getElementById("n4")
+            var n5 = Number.getElementById("n5")
+
+            if (n1 >= n2 && n1 >= n3 && n1 >= n4 && n1 >= n5) {
+                document.getElementById("res").innerHTML = n1.value
+
+            } else if (n2 >= n1 && n2 >= n3 && n2 >= n4 && n2 >= n5) {
+                document.getElementById("res").innerHTML = n2.value
+
+            } else if (n3 >= n2 && n3 >= n1 && n3 >= n4 && n3 >= n5) {
+                document.getElementById("res").innerHTML = n3.value
+
+            } else if (n4 >= n2 && n4 >= n3 && n4 >= n1 && n4 >= n5) {
+                document.getElementById("res").innerHTML = n4.value
+
+            } else if (n5 >= n2 && n5 >= n3 && n5 >= n4 && n5 >= n1) {
+                document.getElementById("res").innerHTML = n5.value
+
+            }
+
+        }
+
+
+    </script>
+</body>
+
+</html>

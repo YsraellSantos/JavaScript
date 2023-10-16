@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #area{
+            background-color: rgb(246, 255, 0);
+            height: 200px;
+            width: 200px;
+            text-align: center;
+            line-height: 200px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 30px;
+            margin-bottom: 2vh;
+            margin-left: 45%;
+            border-radius: 8px;
+            margin-top: 3%;
+            
+        }
+          #quadrado{
+            background-color: green;
+            height: 200px;
+            width: 200px;
+            text-align: center;
+            line-height: 200px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 30px;
+            border-radius: 8px;
+            margin-left: 45%;
+            margin-top: 2%;
+             
+        }
+        p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            background-color: aqua;
+            height:27px;
+            width: 98vh;
+            margin-left: 29%;
+            border-radius: 8px;
+            text-align: center;
+         
+           
+            
+        }
+    </style>
+
+</head>
+<body>
+    <div id="area">
+        interaja.. 
+  
+    </div>
+   <p>Eu israel custodio dos santos fez o teste para programador, e passei.</p>
+    <div id="quadrado">
+        interaja..
+    </div>
+
+    <script>
+    var a = window.document.getElementById('area')
+    a.addEventListener('click', clicar)
+    a.addEventListener('mouseenter', entra)
+    a.addEventListener('mouseout', saio)
+    
+    function clica(){
+        a.innerText = 'Clicou'
+        a.style.background = 'red'
+    }
+    function entra () {
+        a.innerText = 'Entrou'
+    }
+    
+    function saio(){
+        a.innerText = 'Saio'
+       a.style.background = 'yellow'
+    }
+    
+    var q = window.document.getElementById('quadrado')
+    
+    q.addEventListener ('click', clk)
+    q.addEventListener ('mouseenter', ent)
+    q.addEventListener ('mouseout', sai)
+    function clk() {
+        q.style.background = 'cyan'
+        q.innerText = 'Clicou'
+    }
+    
+    function ent(){
+        q.innerText = 'Entrou'
+    }
+    
+    function sai(){
+        q.innerHTML = 'Saio'
+        q.style.background = 'green'
+    }
+</script>
+
+</body>
+</html>

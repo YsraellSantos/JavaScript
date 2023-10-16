@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando valores</title>
+</head>
+<body>
+    <h1>Somando valores</h1>
+
+    <input type="number" name="n1" id="n1" placeholder="Digite um numero">
+    <input type="number" name="n2" id="n2" placeholder="Digite um numero" >
+    
+    <input type="button" value="clique" id="somar" onclick="clique()">
+    <div id="res">Resusltado</div>
+
+    <script>
+        function clique(){
+            var n = window.document.querySelector('input#n1')
+            var s = window.document.querySelector('input#n2')
+            var y = Number(n.value)
+            var x = Number(s.value)
+
+            var r = window.document.getElementById('res')
+            var r = y + x 
+            res.innerHTML = `A soma entre ${x} e ${y}, é ${r}`
+        }
+
+    </script>
+</body>
+</html>

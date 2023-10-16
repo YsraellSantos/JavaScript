@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Sistema de verificação</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 30vh;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+            color: w;
+        }
+
+        input[type="button"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        div#resul {
+            margin-top: 15px;
+            padding: 10px;
+            font-size: 18px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+            text-align: center;
+        }
+
+        h2{
+            text-align: center;
+            font-family: Impact, Haettenschweiler,  sans-serif;
+            font-size: 30px;
+            font-weight: 300;
+
+        }
+    </style>
+
+</head>
+<body>
+
+    <h2>Sistema de Nascionalidade</h2>
+
+    <main>
+        <label for="nas">Nacionalidade
+            <input type="text" name="nas" id="nas" placeholder="Digite sua nacionalidade">
+            <input type="button" value="verificar" id="verificar" onclick="clicou()">
+            <div id="resul">Resultado</div>
+        </label>   
+    </main>
+
+    <script>
+        function clicou() {
+            var alt = window.document.querySelector('input#nas').value.toLowerCase();
+            var vr = window.document.querySelector('div#resul');
+         
+            if (alt === "brasileiro" || alt === "brasileira") {
+                vr.style.background = 'yellow';
+                vr.innerHTML = `Você é Brasileir${alt.endsWith('a') ? 'a' : 'o'}.`;
+               
+            } 
+            
+            else {
+                vr.innerHTML = "Nacionalidade estrangeira.";
+                vr.style.background = 'red';
+                vr.style.color = 'white'
+            }
+
+            if (alt ==  0) {
+                vr.style.background = 'green'
+                vr. innerHTML = 'Valor Invalido'
+                
+            }     
+        }
+    </script>
+   
+</body>
+</html>

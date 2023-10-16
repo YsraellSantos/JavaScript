@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão</title>
+    <style>
+
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            font-size: 20px;
+            background-color: rgba(122, 135, 131, 0.567);
+        }
+
+
+        div#res{
+            margin-top: 20px;
+            color: aliceblue;
+            font-size: 18px;
+            background-color: rgb(26, 132, 190);
+            height: 90px;
+            width: 100px;
+            text-align: center;
+            line-height: 50px;
+       
+            
+        }
+    </style>
+   
+</head>
+<body>
+
+
+<h2>Somando valores</h2>
+
+<input type="number" id="n1" placeholder="Digite um numero">+
+<input type="number" id="n2" placeholder=" Digite um numero">
+<input type="button" id="soma" value="Somar" onclick="somar()" >
+
+<div id="res">Resultado</div>
+
+
+
+
+    <script>
+
+
+
+    function somar(){
+
+     var numero1 = window.document.getElementById('n1')
+     var numero2 = window.document.getElementById('n2')
+     var resultado = window.document.getElementById('res')
+
+     var num = Number(numero1.value)
+     var num1 = Number(numero2.value)
+     
+     var s = num + num1
+
+  
+    resultado.innerHTML = 'A soma é ' + s;
+    resultado.style.color = 'yellow'
+
+
+  
+    }
+
+    </script>
+</body>
+</html>
