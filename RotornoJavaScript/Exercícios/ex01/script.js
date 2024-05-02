@@ -1,0 +1,6 @@
+window.alert("Olá Seja Bem-Vindo")
+window.alert("Me tornarei progamador ate no inicio de 2025")
+window.prompt("Digite seu nome")
+window.prompt("Digite seu email")
+window.prompt("Digite sua senha")
+window.alert("Muito bem, vamos começa")
