@@ -1,4 +1,5 @@
 window.alert("Formulario")
+
 var idade = window.prompt("Qual é a sua idade ?\n")
 var nome = window.prompt("Qual o seu nome ?\n")
 var escolaridade = window.prompt("Qual a sua escolaridade ?\n")
@@ -9,3 +10,7 @@ document.write(`your name é ${nome}`)
 document.write(`your name em letras MAIUSCULAS é ${nome.toLocaleUpperCase()}`)
 document.write(`your name em letras minusculas é ${nome.toLowerCase()}`)
 
+var n1 = Number(window.prompt("Divisor"))
+var n2 = Number(window.prompt("Dividendo"))
+var res =  (n2) / n1
+document.write(res)
