@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variaveis</title>
+    <style>
+        body{
+            background-color: rgb(0, 0, 0);
+            color:rgb(250, 241, 241);
+        }
+    </style>
+</head>
+<body>
+    <h1>Imprimindo variaveis na tel</h1>
+    <p>Aqui vai os resultados</p>
+   
+    <pre>
+    
+        <h2>Mensagens de alteração</h2>
+            <p id="msg">Muda de cor, <br> </p>
+           <div id = "al">O contexto pode ser alterado tambem</div>
+
+    </pre>
+
+    <script>
+
+/*var nome = window.prompt("Qualo se u nome?")
+document.write(`Seu nome é ${nome} <br> `)
+document.write(`Seu nome tem  ${nome.length} letras `)
+*/
+window.document.write("As mensagens que forem escrirta para baixo sera a travez do javaScritp <br> <br>")
+
+window.document.write("Eu posso imprimir qualquer coisa na tela sem precisar usar o html apenas usando o javaScritp <br> <br>")
+window.document.write("Eu posso tambem selecionar os tegs que estão no meu html e fazer as alterações como, Cor texto <br> <br>")
+
+
+var p1 = window.document.getElementsByTagName('p') // Seleciona a teg html 
+window.document.write('JS ' + p1[0].innerHTML) // Imprime na tela
+var ms = window.document.getElementById('msg')
+ms.style.background = 'red'
+ms.style.textAlign = 'center'
+
+var mens = window.document.querySelector('div#al')
+mens.style.color = "red"
+
+    </script>
+</body>
+</html>
