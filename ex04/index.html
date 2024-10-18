@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis</title>
+    <style>
+        body {
+            background-color: rgb(162, 219, 233);
+        }
+    </style>
+</head>
+<body>
+    <h1>Estudando variáveis</h1>
+    
+    <p id="p1">Este é o parágrafo um</p>
+    <p class="p2">Este é o parágrafo dois</p>
+    <p id="msg">Apenas mude de cor</p>
+    <div id="div1">Mude a frase</div>
+
+    <script>
+      
+        var pr1 = window.document.getElementById('p1');
+        pr1.innerText = 'A frase do parágrafo um foi mudada';
+        pr1.style.color = 'red';
+
+       
+        var pr2 = window.document.getElementsByClassName('p2')[0];
+        pr2.innerText = 'O texto do parágrafo dois foi alterado';
+        pr2.style.color = 'yellow';
+
+       
+        var corr = window.document.querySelector('#msg');
+        corr.innerText = 'Carregando...';
+        corr.style.color = 'blue';
+
+  
+        var div = window.document.getElementById('div1');
+        div.innerText = 'A frase do div foi mudada';
+    </script>
+</body>
+</html>

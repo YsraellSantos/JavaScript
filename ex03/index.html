@@ -14,7 +14,7 @@
 <body>
     <h1>Imprimindo variaveis na tel</h1>
     <p>Aqui vai os resultados</p>
-   
+   <h2 id="ola">Ola mundo</h2>
     <pre>
     
         <h2>Mensagens de alteração</h2>
@@ -36,7 +36,7 @@ window.document.write("Eu posso tambem selecionar os tegs que estão no meu html
 
 
 var p1 = window.document.getElementsByTagName('p') // Seleciona a teg html 
-window.document.write('JS ' + p1[0].innerHTML) // Imprime na tela
+window.document.write('JS <br>' + p1[0].innerHTML) // Imprime na tela
 var ms = window.document.getElementById('msg')
 ms.style.background = 'red'
 ms.style.textAlign = 'center'
@@ -44,6 +44,19 @@ ms.style.textAlign = 'center'
 var mens = window.document.querySelector('div#al')
 mens.style.color = "red"
 
+var ol = window.document.getElementById('ola')
+ol.style.color = 'red'
+ol.innerText = ('Ola munnndo')
+
+let numero = 0;
+
+        if (numero > 10) {
+            document.write(numero)
+        }else{
+            document.write(' <br> Numero não é maior que 10')
+        }
+
+      
     </script>
 </body>
 </html>
