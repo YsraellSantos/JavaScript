@@ -40,7 +40,8 @@ const operadoresAritiméticos = function () {
     console.log(`O resto da divisão entre (${i} % ${j}) é igual á resto ${restoDaDivisao})`)
     console.log("---------------")
 
-    // Exponencial
+    // Exponencial4
+    // elevado
     let k = 5
     let l = 3
     const exponencial = k ** l
@@ -122,4 +123,20 @@ const ordemPrecedencia = function () {
     console.log(todos1)
 }
 
-ordemPrecedencia()
+const igualDiferente = function (){
+    let one = 1
+    let two = 2
+
+    console.log(one == 1)
+    console.log(one == "1")
+    console.log(one === "1")
+    console.log(one != 1)
+
+    console.log(two == 2)
+    console.log(two == "2")
+    console.log(two === "2")
+    console.log(two != 2)
+    console.log(two != "2")
+}
+
+igualDiferente()
