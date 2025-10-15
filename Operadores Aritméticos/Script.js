@@ -68,14 +68,58 @@ const operadoresDeIncrementoEDecremento = function () {
 
     // Incremento mas de um valor
     let num1 = 1
-    num1 =+ 4
+    num1 = + 4
     console.log(`Valor atual ${num1} incremento de 5 resultado de ${num1 + 5}`)
 
     // Decremento mas de um valor
     let num2 = 10
-    num2 =- 4
+    num2 = - 4
     console.log(`Valor atual ${num2} decremento de 5 resultado de ${num2 - 5}`)
 
 }
 
-operadoresDeIncrementoEDecremento()
+
+
+const ordemPrecedencia = function () {
+    /*
+    =================================
+           TABELA DE PRECEDÊNCIA
+    =================================
+    Nível | Categoria        | Operadores
+    -------------------------------------
+    7 (alto)  | Exponenciação     | **
+    6         | Multiplicação     | *, /, %, //
+    5         | Adição            | +, -
+    4         | Relacional        | ==, !=, <=, >=, >, <
+    3         | Lógico (NOT)      | !   Se for verdadeiro vira falso e vice-versa
+    2         | Lógico (AND)      | &&  Precisa que todas sejam verdadeiras
+    1 (baixo) | Lógico (OR)       | ||  So precisa que uma seja verdadeira 
+    -------------------------------------
+    */
+
+    let total1 = 2 + 3 * 4
+    console.log(total1)
+
+    let total2 = (2 + 3) * 4
+    console.log(total2)
+
+    let average = (9.5 + 7 + 5) / 3
+    console.log(average.toFixed(2))
+
+    let notas = false && true
+    console.log(notas)
+
+    let notas1 = true || false
+    console.log(notas1)
+
+    let validasion = !true
+    console.log(validasion)
+
+    const user  = true
+    let todos = 2 ** 3 / 3 + 10 > 20 &&  3 > 2
+    let todos1 = 2 ** 3 / 3 + 10 > 20 || !user
+    console.log(todos)
+    console.log(todos1)
+}
+
+ordemPrecedencia()
