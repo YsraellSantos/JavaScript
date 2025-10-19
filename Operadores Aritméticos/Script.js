@@ -139,4 +139,21 @@ const igualDiferente = function (){
     console.log(two != "2")
 }
 
-igualDiferente()
+const maiorMenorIgual = function(){
+    let balance = 500 
+    let payment= 130 
+
+
+    // Maior que
+    console.log(balance > payment)
+
+    // Maior igual 
+    console.log(balance < payment)
+
+    balance = 130
+    console.log(balance >= payment)
+
+    console.log(payment >= balance)
+}
+
+maiorMenorIgual()
