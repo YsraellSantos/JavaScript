@@ -116,14 +116,14 @@ const ordemPrecedencia = function () {
     let validasion = !true
     console.log(validasion)
 
-    const user  = true
-    let todos = 2 ** 3 / 3 + 10 > 20 &&  3 > 2
+    const user = true
+    let todos = 2 ** 3 / 3 + 10 > 20 && 3 > 2
     let todos1 = 2 ** 3 / 3 + 10 > 20 || !user
     console.log(todos)
     console.log(todos1)
 }
 
-const igualDiferente = function (){
+const igualDiferente = function () {
     let one = 1
     let two = 2
 
@@ -139,9 +139,9 @@ const igualDiferente = function (){
     console.log(two != "2")
 }
 
-const maiorMenorIgual = function(){
-    let balance = 500 
-    let payment= 130 
+const maiorMenorIgual = function () {
+    let balance = 500
+    let payment = 130
 
 
     // Maior que
@@ -156,4 +156,71 @@ const maiorMenorIgual = function(){
     console.log(payment >= balance)
 }
 
-maiorMenorIgual()
+const operadoresLogicos = function () {
+    let emial = true
+    let senha = true
+
+    // AND (E) &&
+    console.log(emial && senha)
+    // Se os dois forem verdadeiros o resultado sera verdadeiro
+
+    emial = true
+    password = false
+
+    // OR (OU) ||
+    console.log(emial || password)
+    // Se um dos dois for verdadeiro o resultado sera verdadeiro
+
+    let city = true
+
+    // NOT (NÃO) !
+    console.log(!city)
+    // Inverte o valor lógico, se for falso vira verdadeiro e vice-versa
+
+
+}
+
+
+
+
+const condicionaisControle = function () {
+
+
+
+    // If
+    let condicaoIF = () => {
+        let idade = 16
+
+        if (idade > 18) {
+            console.log("Maior de idade")
+        }
+
+        if (idade < 17) {
+            console.log("A idade é menor que 17")
+        }
+    }
+
+    condicaoIF()
+
+
+    let condicaoIFElse = () => {
+        let idade = 20
+
+        if (idade >= 18) {
+            console.log("Maior de idade")
+        } else if (idade === 18) {
+            console.log("Maior de idade")
+        }
+
+        if (idade < 16) {
+            console.log("Menor de 16 anos") 
+        }
+
+    }
+
+    condicaoIFElse()
+
+
+
+}
+condicionaisControle()
