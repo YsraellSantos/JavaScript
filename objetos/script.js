@@ -59,4 +59,20 @@ const product = {
 
 
 
-console.log(product?.property?.name)
+// console.log(product?.property?.name)
+
+
+// operador de coalecencia nula
+// O operador de coalescência nula (??)
+//  é usado em JavaScript (e TypeScript)
+//  para definir valores padrão, somente
+//  quando o valor é null ou undefined.
+
+const usuario = {
+    name: "Israel",
+    avatar:null,
+}
+
+console.log(usuario.avatar ?? "Default.png")
+// Então ele verifica se existe algo dentro do avatar ou se o usuario colocou a 
+// Foto ou não.
