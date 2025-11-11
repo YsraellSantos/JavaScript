@@ -70,9 +70,83 @@ const product = {
 
 const usuario = {
     name: "Israel",
-    avatar:null,
+    avatar: "Foto.png",
 }
 
-console.log(usuario.avatar ?? "Default.png")
+// console.log(usuario.avatar ?? "Default.png")
 // Então ele verifica se existe algo dentro do avatar ou se o usuario colocou a 
 // Foto ou não.
+
+//  função construtora
+let lastId = 0
+
+
+function createProduct_Description(name = "", description, type) {
+
+    lastId++ // incrementa id
+
+    const product_Description = {
+        id: lastId,
+        name,
+        description,
+        type
+    }
+
+    product_Description.details = function () {
+        console.log(`
+Id: ${this.id}
+Nome: ${this.name}
+Descrição: ${this.description}
+Tipo: ${this.type}
+        `)
+    }
+
+    return product_Description
+}
+
+const product1 = createProduct_Description("Teclado", "Gamer", "Sem fio")
+product1.details()
+
+const product2 = createProduct_Description("Mouse", "RGB", "Sem fio")
+product2.details()
+
+const product3 = createProduct_Description("Monitor", "24 Polegadas", "160Hz")
+product3.details()
+
+
+var idCar = 0
+
+function PersonCarros( name = "", serie = "", cor = "", motor) {
+    idCar++
+    const descriptionCar = {
+        id: idCar,
+        name,
+        serie,
+        cor,
+        motor
+    }
+
+    descriptionCar.details1 = function () {
+        console.log(`Id: ${this.id} \n
+                    Nome: ${this.name} \n
+                    Serie: ${this.serie} \n
+                    Cor: ${this.cor} \n
+                    Motor: ${this.motor}`)
+    }
+
+    return descriptionCar
+
+}
+
+
+const Basic = PersonCarros("corola", "01", "preto", "1.0")
+Basic.details1()
+
+const classic = PersonCarros("Civic", "02", "Prata", "1.8")
+classic.details1()
+
+const gold = PersonCarros("BMW M4", "03", "Amarela", "3.0")
+gold.details1()
+
+
+
