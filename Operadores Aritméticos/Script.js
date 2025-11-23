@@ -213,7 +213,7 @@ const condicionaisControle = function () {
         }
 
         if (idade < 16) {
-            console.log("Menor de 16 anos") 
+            console.log("Menor de 16 anos")
         }
 
     }
@@ -223,4 +223,30 @@ const condicionaisControle = function () {
 
 
 }
-condicionaisControle()
+// condicionaisControle()
+
+
+const switchCase = function () {
+
+    let idade = 13
+    let categoria
+
+    if (idade >= 0 && idade <= 1) categoria = 1
+    else if (idade > 1 && idade <= 10) categoria = 2
+    else if (idade > 10 && idade <= 17) categoria = 3
+    else if (idade >= 18 && idade <= 35) categoria = 4
+    else if (idade > 35 && idade <= 60) categoria = 5
+    else categoria = 0
+
+    switch (categoria) {
+        case 1: console.log("Bebê"); break
+        case 2: console.log("Criança"); break
+        case 3: console.log("Adolescente"); break
+        case 4: console.log("Jovem"); break
+        case 5: console.log("Adulto"); break
+        default: console.log("Idade não categorizada")
+    }
+
+}
+
+// switchCase()
